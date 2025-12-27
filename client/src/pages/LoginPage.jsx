@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Navigate, useNavigate } from 'react-router-dom';
 import { useAuth } from '../context/UserContext';
@@ -30,7 +31,7 @@ const LoginPage = () => {
         try {
             const res = await api.post(`/auth/${endpoint}`, body);
             
-            const { token: jwtToken, name: userName, email: userEmail, _id: userId } = res.data;
+            const { token: Tojen, name: userName, email: userEmail, _id: userId } = res.data;
             if (jwtToken) {
                 login(jwtToken, { name: userName, email: userEmail, id: userId });
                 navigate('/list');
