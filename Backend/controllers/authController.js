@@ -37,6 +37,11 @@ const registerUser = async (req, res) => {
 const loginUser = async (req, res) => {
     const { email, password } = req.body;
 
+    // Test error: 404 for testing purposes
+    if (email === 'test404@example.com') {
+        return res.status(404).json({ message: 'Login endpoint not found or service unavailable' });
+    }
+
     const user = await User.findOne({ email });
 
     if (user && (await user.matchPassword(password))) {
