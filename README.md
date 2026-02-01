@@ -25,7 +25,7 @@ React
 
 JavaScript
 
-HTML & CSS
+Tailwind CSS
 
 Backend
 
@@ -35,13 +35,13 @@ Express.js
 
 Database
 
-MongoDB (or PostgreSQL — edit if applicable)
+MongoDB
 
 Deployment
 
-Frontend: Vercel / Netlify (edit if needed)
+Frontend: Vercel
 
-Backend: Render (or similar)
+Backend: Render
 
 ✨ Features
 
@@ -51,7 +51,7 @@ Add customer and product details
 
 Automatic invoice total calculation
 
-Invoice status tracking (Paid / Pending)
+Invoice status tracking (Paid / Pending / Due)
 
 Editable and deletable invoices
 
